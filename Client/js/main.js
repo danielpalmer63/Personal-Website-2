@@ -5,6 +5,12 @@ request.onload = function () {
   if (request.status == 200) {
 //BLOG PREVIEW    
     for (var i = 0; i < 3; i++) {
+      var imgID = '#blogImage' + i;   
+      let img = document.createElement("img");
+      img.setAttribute("src", data[i].image);
+      img.setAttribute("class", "card-img-top");
+      document.querySelector(imgID).appendChild(img);
+
       var titleID = 'blogTitle' + i;
       var textID = 'blogText' + i;      
       document.getElementById(titleID).innerHTML = data[i].title;
