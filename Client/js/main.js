@@ -1,3 +1,4 @@
+
 let request = new XMLHttpRequest();
 request.open("GET", "http://127.0.0.1:3000/getAll", true);
 request.onload = function () {

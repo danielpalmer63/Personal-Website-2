@@ -64,8 +64,8 @@
   </section>
 
   <section>
-    <div class="container" style="margin-bottom: 2rem">
-    <div id="carouselExampleCaptions" class="carousel slide shadow" data-ride="carousel">
+    <div class="container">
+    <div id="carouselExampleCaptions" class="carousel slide mb-4 shadow" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -110,7 +110,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm">
-          <div class="card shadow" style="width: 18rem; margin-bottom: 2rem;">
+          <div class="card mb-4 shadow" style="width: 18rem;">
             <div id="blogImage0"></div>
             <div class="card-body">
               <h5 class="card-title" id="blogTitle0"></h5>
@@ -121,7 +121,7 @@
           </div>
         </div>
         <div class="col-sm">
-          <div class="card shadow" style="width: 18rem; margin-bottom: 2rem;">
+          <div class="card mb-4 shadow" style="width: 18rem;">
             <div id="blogImage1"></div>
             <div class="card-body">
               <h5 class="card-title" id="blogTitle1"></h5>
@@ -132,7 +132,7 @@
           </div>
         </div>
         <div class="col-sm">
-          <div class="card shadow" style="width: 18rem; margin-bottom: 2rem;">
+          <div class="card mb-4 shadow" style="width: 18rem;">
             <div id="blogImage2"></div>
             <div class="card-body">
               <h5 class="card-title" id="blogTitle2"></h5>
@@ -148,7 +148,7 @@
 
   <section>
     <div class="container">
-      <div class="card mb-3">
+      <div class="card mb-4 shadow">
         <div class="row no-gutters">
           <div class="col-md-4">
             <img src="..." class="card-img" alt="...">
@@ -172,7 +172,8 @@
             <img class="img-thumbnail" src="./images/logoSM.png" style="margin-bottom: 1rem;">
             <h5 style="margin-bottom: 1rem;">Daniel Palmer</h5>
             <p><a href="./About.html">About</a><br><a href="./Blog.html">Blog</a></p>
-            <i class="fab fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/daniel-palmer2020/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/danielpalmer63"><i class="fab fa-github-square"></i></a>
           </div>
           <div class="col-md">
             <h4 style="margin-bottom: 1rem;">Recent News</h4>
@@ -181,11 +182,13 @@
           </div>
           <div class="col-md">
             <h4 style="margin-bottom: 1rem;">Contact Me</h4>
-            <form>
+            <form method="POST" name="contact-form" action="contactform.php">
               <div class="form-group" style="text-align: center;">
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style="margin-bottom: 1rem;" placeholder="Email">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"  style="margin-bottom: 1rem;" placeholder="Message"></textarea>
-                <button type="button" class="btn btn-primary" >Send Message</button>
+                <input  class="form-control" name="name" type="text" aria-describedby="emailHelp" style="margin-bottom: 1rem;" placeholder="Full Name" required>
+                <input  class="form-control" name="email" type="text" aria-describedby="emailHelp" style="margin-bottom: 1rem;" placeholder="Email" required>
+                <input  class="form-control" name="subject" type="text" aria-describedby="emailHelp" style="margin-bottom: 1rem;" placeholder="Subject" required>
+                <textarea class="form-control" name="message" type="text" rows="6"  style="margin-bottom: 1rem;" placeholder="Message" required></textarea>
+                <button type="submit" value="submit" class="btn btn-primary" >Send Message</button>
               </div>
             </form>
           </div>
