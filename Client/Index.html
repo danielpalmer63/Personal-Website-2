@@ -15,7 +15,7 @@
 <body>
   <section> <!--This entire section handles the nav bar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <img src="./images/logo.png" height="3%" width="3%" style="padding-right: 8px">
+      <img src="./images/logo.jpg" height="3%" width="3%" style="padding-right: 8px">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -169,7 +169,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md">
-            <img class="img-thumbnail" src="./images/logoSM.png" style="margin-bottom: 1rem;">
+            <img class="img-thumbnail" src="./images/logoSM.jpg" style="margin-bottom: 1rem;">
             <h5 style="margin-bottom: 1rem;">Daniel Palmer</h5>
             <p><a href="./About.html">About</a><br><a href="./Blog.html">Blog</a></p>
             <a href="https://www.linkedin.com/in/daniel-palmer2020/"><i class="fab fa-linkedin"></i></a>
@@ -182,13 +182,13 @@
           </div>
           <div class="col-md">
             <h4 style="margin-bottom: 1rem;">Contact Me</h4>
-            <form method="POST" name="contact-form" action="contactform.php">
+            <form method="post" name="contact-form" action="./contactform.php">
               <div class="form-group" style="text-align: center;">
                 <input  class="form-control" name="name" type="text" aria-describedby="emailHelp" style="margin-bottom: 1rem;" placeholder="Full Name" required>
                 <input  class="form-control" name="email" type="text" aria-describedby="emailHelp" style="margin-bottom: 1rem;" placeholder="Email" required>
                 <input  class="form-control" name="subject" type="text" aria-describedby="emailHelp" style="margin-bottom: 1rem;" placeholder="Subject" required>
                 <textarea class="form-control" name="message" type="text" rows="6"  style="margin-bottom: 1rem;" placeholder="Message" required></textarea>
-                <button type="submit" value="submit" class="btn btn-primary" >Send Message</button>
+                <input type="submit" value="Send Message" class="btn btn-primary" ></input>
               </div>
             </form>
           </div>

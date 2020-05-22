@@ -10,6 +10,6 @@
         $txt = "You have recieved an e-mail from ".$name.".\n\n".$message;
 
         mail($mailTo, $subject, $txt, $headers);
-        header("Location: index.php?mailsend");
+        echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
     }
 ?>
