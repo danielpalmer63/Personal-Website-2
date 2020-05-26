@@ -1,0 +1,25 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielpalmer63/Personal-Website-2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/danielpalmer63/Personal-Website-2/issues"
+  },
+  "homepage": "https://github.com/danielpalmer63/Personal-Website-2#readme",
+  "description": ""
+}
