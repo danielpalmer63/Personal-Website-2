@@ -1,5 +1,5 @@
 let request = new XMLHttpRequest();
-request.open("GET", "/getAll", true);
+request.open("GET", "https://palmtreedevapi.herokuapp.com/getAll", true);
 request.onload = function () {
   let data = JSON.parse(this.response);
   if (request.status == 200) {
