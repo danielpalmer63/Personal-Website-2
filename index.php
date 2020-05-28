@@ -29,7 +29,7 @@
             <a class="nav-link" href="./About.php">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./Blog.html">Blog</a>
+            <a class="nav-link" href="./Blog.php">Blog</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -109,7 +109,7 @@
               <h5 class="card-title" id="blogTitle0"></h5>
               <p class="card-text"><small class="text-muted" id="blogDate0"></small></p>
               <p class="card-text" id="blogText0"></p>
-              <a href="#" class="btn btn-primary">Read More</a>
+              <a href="./Blog.php" class="btn btn-outline-primary">Read More</a>
             </div>
           </div>
         </div>
@@ -120,7 +120,7 @@
               <h5 class="card-title" id="blogTitle1"></h5>
               <p class="card-text"><small class="text-muted" id="blogDate1"></small></p>
               <p class="card-text" id="blogText1"></p>
-              <a href="#" class="btn btn-primary">Read More</a>
+              <a href="./Blog.php" class="btn btn-outline-primary">Read More</a>
             </div>
           </div>
         </div>
@@ -131,7 +131,7 @@
               <h5 class="card-title" id="blogTitle2"></h5>
               <p class="card-text"><small class="text-muted" id="blogDate2"></small></p>
               <p class="card-text" id="blogText2"></p>
-              <a href="#" class="btn btn-primary">Read More</a>
+              <a href="./Blog.php" class="btn btn-outline-primary">Read More</a>
             </div>
           </div>
         </div>
@@ -165,8 +165,8 @@
             <img class="img-thumbnail" src="https://i.imgur.com/Vjk0RHx.png" style="margin-bottom: 1rem;">
             <h5 style="margin-bottom: 1rem;">Daniel Palmer</h5>
             <p><a href="./About.html">About</a><br><a href="./Blog.html">Blog</a></p>
-            <a href="https://www.linkedin.com/in/daniel-palmer2020/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/danielpalmer63"><i class="fab fa-github-square"></i></a>
+            <a href="https://www.linkedin.com/in/daniel-palmer2020/"><i class="fab fa-linkedin" style="color: #2867B2;"></i></a>
+            <a href="https://github.com/danielpalmer63"><i class="fab fa-github-square" style="color: #211F1F;"></i></a>
           </div>
           <div class="col-md">
             <h4 style="margin-bottom: 1rem;">Recent News</h4>

@@ -30,7 +30,7 @@
             <a class="nav-link" href="./About.php">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./Blog.html">Blog</a>
+            <a class="nav-link" href="./Blog.php">Blog</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -173,6 +173,11 @@
           <div class="col">
             <div class="mt-5">
               <h4>Who am I..?</h4>
+              <p>Hey, I'm Daniel, a software engineer / web designer in Pennsylvania. I've been a full time student for the past 4 years, studying application developnent at the Penn State University College of Information Sciences and Technology. On top of that, I've spent two years as an IT consultant for the Penn State Altoona Office of IT and another 2 years as an assistant web developer for the Penn State University Graduate School. It should be fairly obvious by now that I love to keep busy. However, that doesn't mean that I don't have time to persue my hobbies.</p>
+              <p>When I'm not busy working, I focus on my own physical fitness with outdoor long distance running. From its humble beginnings as a means to lose weight during my sophomore year, running has grown to be a very important part of my life. While some find it painful to even think about running long distances, I find it more like a meditation. Many of my design and system architecture ideas are often formed on the street midway between my apartment and University Park. Running has also opened up my eyes to the natural beauty of the outdoors. This is what sparked my love for photography.</p>
+              <p>While it is important to maintain professional standards and design products for a user, I have always thrived when given the oppertunity to be creative. After years of being chosen as the family photographer, I decided to pick up the camera and capture the beautiful moments that have meaning to not just me, but millions of others. Not only that, but with the stage that I've built to display my work, I can continue to grow as an artist.</p>
+              <p>The passions in my life are incredibly important, but rest and relaxation is also required to maintain a healthy mindest. For moments like these, some people have an old car they like to fix and tune to perfection. For me, I have my custom built PC. My introduction to IT began in high school when a couple of friends and I began researching how to change our method of playing video games from a console to a PC. Obviously, my old laptop performed less than adequate. Thus, I began looking into the idea of building my own. After months of saving up money from my part time job at the grocery store and constant research on the perfect parts to buy, I was finally able to put together my first PC in 2015. Ever since, I have been upgrading, modifying, and rebuilding it to be the fastest, best looking, and most powerful machine it could become.</p>
+              <p>You can learn a lot more about me and what I've been working on either on my blog, or though an email. Send me a message and lets talk about code or any other business inquiries!</p>
             </div>
           </div>
           </div>
@@ -188,8 +193,8 @@
             <img class="img-thumbnail" src="https://i.imgur.com/Vjk0RHx.png" style="margin-bottom: 1rem;">
             <h5 style="margin-bottom: 1rem;">Daniel Palmer</h5>
             <p><a href="./About.html">About</a><br><a href="./Blog.html">Blog</a></p>
-            <a href="https://www.linkedin.com/in/daniel-palmer2020/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/danielpalmer63"><i class="fab fa-github-square"></i></a>
+            <a href="https://www.linkedin.com/in/daniel-palmer2020/"><i class="fab fa-linkedin" style="color: #2867B2;"></i></a>
+            <a href="https://github.com/danielpalmer63"><i class="fab fa-github-square" style="color: #211F1F;"></i></a>
           </div>
           <div class="col-md">
             <h4 style="margin-bottom: 1rem;">Recent News</h4>
