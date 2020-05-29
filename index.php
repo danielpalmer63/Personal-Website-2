@@ -26,10 +26,10 @@
             <a class="nav-link" href="http://palmtreedev.com/">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./About.php">About</a>
+            <a class="nav-link" href="http://palmtreedev.com/about/">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./Blog.php">Blog</a>
+            <a class="nav-link" href="http://palmtreedev.com/blog/">Blog</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -109,7 +109,7 @@
               <h5 class="card-title" id="blogTitle0"></h5>
               <p class="card-text"><small class="text-muted" id="blogDate0"></small></p>
               <p class="card-text" id="blogText0"></p>
-              <a href="./Blog.php" class="btn btn-outline-primary">Read More</a>
+              <a href="./blog" class="btn btn-outline-primary">Read More</a>
             </div>
           </div>
         </div>
@@ -120,7 +120,7 @@
               <h5 class="card-title" id="blogTitle1"></h5>
               <p class="card-text"><small class="text-muted" id="blogDate1"></small></p>
               <p class="card-text" id="blogText1"></p>
-              <a href="./Blog.php" class="btn btn-outline-primary">Read More</a>
+              <a href="./blog" class="btn btn-outline-primary">Read More</a>
             </div>
           </div>
         </div>
@@ -131,7 +131,7 @@
               <h5 class="card-title" id="blogTitle2"></h5>
               <p class="card-text"><small class="text-muted" id="blogDate2"></small></p>
               <p class="card-text" id="blogText2"></p>
-              <a href="./Blog.php" class="btn btn-outline-primary">Read More</a>
+              <a href="./blog" class="btn btn-outline-primary">Read More</a>
             </div>
           </div>
         </div>
