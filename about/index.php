@@ -32,15 +32,19 @@
           <li class="nav-item">
             <a class="nav-link" href="http://palmtreedev.com/blog/">Blog</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://palmtreedev.com/projects/">Projects</a>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
               Social Media
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="https://www.linkedin.com/in/daniel-palmer2020/"><i
-                  class="fab fa-linkedin"></i> LinkedIn</a>
-              <a class="dropdown-item" href="https://github.com/danielpalmer63"><i class="fab fa-github"></i> GitHub</a>
+            <a class="dropdown-item" href="https://www.linkedin.com/in/daniel-palmer2020/"><i
+                  class="fab fa-linkedin" style="color: #2867B2;"></i> LinkedIn</a>
+              <a class="dropdown-item" href="https://github.com/danielpalmer63"><i class="fab fa-github" style="color: #211F1F;"></i> GitHub</a>
+              <a class="dropdown-item" href="https://stackoverflow.com/users/13592077/daniel-palmer"><i class="fab fa-stack-overflow"></i> Stack Overflow</a>
             </div>
           </li>
         </ul>
@@ -192,9 +196,10 @@
           <div class="col-md">
             <img class="img-thumbnail" src="https://i.imgur.com/Vjk0RHx.png" style="margin-bottom: 1rem;">
             <h5 style="margin-bottom: 1rem;">Daniel Palmer</h5>
-            <p><a href="./About.html">About</a><br><a href="./Blog.html">Blog</a></p>
+            <p><a href="http://palmtreedev.com/about/">About</a><br><a href="http://palmtreedev.com/blog/">Blog</a><br><a href="http://palmtreedev.com/projects/">Projects</a></p>
             <a href="https://www.linkedin.com/in/daniel-palmer2020/"><i class="fab fa-linkedin" style="color: #2867B2;"></i></a>
             <a href="https://github.com/danielpalmer63"><i class="fab fa-github-square" style="color: #211F1F;"></i></a>
+            <a href="https://stackoverflow.com/users/13592077/daniel-palmer"><i class="fab fa-stack-overflow" style="color: #211F1F;"></i></a>
           </div>
           <div class="col-md">
             <h4 style="margin-bottom: 1rem;">Recent News</h4>

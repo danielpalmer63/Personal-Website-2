@@ -5,6 +5,7 @@ request.onload = function () {
   if (request.status == 200) {
 //BLOG PREVIEW    
     for (var i = 0; i < 3; i++) {
+      document.getElementById('spinner' + i).setAttribute("style", "display: none");
       var imgID = '#blogImage' + i;   
       let img = document.createElement("img");
       img.setAttribute("src", data[i].image);
@@ -65,3 +66,20 @@ request.onload = function () {
   }
 }
 request.send();
+
+let request1 = new XMLHttpRequest();
+request1.open("GET", "https://api.github.com/users/danielpalmer63", true);
+request1.onload = function () {
+  let data = JSON.parse(this.response);
+  if (request1.status == 200) {
+//BLOG PREVIEW    
+let gitImg = document.createElement("img");
+gitImg.setAttribute("src", data.avatar_url);
+gitImg.setAttribute("class", "card-img");
+document.querySelector("#gitHubImage").appendChild(gitImg);
+  }
+  else {
+    console.log("An error occured" + " " + request1.status);
+  }
+}
+request1.send();

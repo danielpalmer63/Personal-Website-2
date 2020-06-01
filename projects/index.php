@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/index.css">
   <script src="https://kit.fontawesome.com/8e747eb614.js" crossorigin="anonymous"></script>
 
-  <title>Blog</title>
+  <title>About Daniel</title>
 </head>
 
 <body>
@@ -29,10 +29,10 @@
           <li class="nav-item">
             <a class="nav-link" href="http://palmtreedev.com/about/">About</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="http://palmtreedev.com/blog/">Blog</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item  active">
             <a class="nav-link" href="http://palmtreedev.com/projects/">Projects</a>
           </li>
           <li class="nav-item dropdown">
@@ -41,10 +41,10 @@
               Social Media
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="https://www.linkedin.com/in/daniel-palmer2020/"><i
-                class="fab fa-linkedin" style="color: #2867B2;"></i> LinkedIn</a>
-            <a class="dropdown-item" href="https://github.com/danielpalmer63"><i class="fab fa-github" style="color: #211F1F;"></i> GitHub</a>
-            <a class="dropdown-item" href="https://stackoverflow.com/users/13592077/daniel-palmer"><i class="fab fa-stack-overflow"></i> Stack Overflow</a>
+            <a class="dropdown-item" href="https://www.linkedin.com/in/daniel-palmer2020/"><i
+                  class="fab fa-linkedin" style="color: #2867B2;"></i> LinkedIn</a>
+              <a class="dropdown-item" href="https://github.com/danielpalmer63"><i class="fab fa-github" style="color: #211F1F;"></i> GitHub</a>
+              <a class="dropdown-item" href="https://stackoverflow.com/users/13592077/daniel-palmer"><i class="fab fa-stack-overflow"></i> Stack Overflow</a>
             </div>
           </li>
         </ul>
@@ -53,29 +53,7 @@
       </div>
     </nav>
   </section>
-
-  <div class="alert alert-primary" role="alert" style="text-align: center;">
-    This page is currently under construction. Only blog previews are availible at the moment. Thank you!
-  </div>
-
-  <section>
-    <div class="container">
-      <div class="border-bottom">
-        <div class="lead mt-5">Recent Posts</div>
-      </div>
-      <div id="blogContent0"></div>
-      <div id="blogContent1"></div>
-      <div id="blogContent2"></div>
-      <div id="blogContent3"></div>
-      <div id="blogContent4"></div>
-      <div id="blogContent5"></div>
-      <div id="blogContent6"></div>
-      <div id="blogContent7"></div>
-      <div id="blogContent8"></div>
-      <div id="blogContent9"></div>
-    </div>
-  </section>
-
+  <h1>This page is currently under construction</h1>
   <section>
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
@@ -110,16 +88,15 @@
     </div>
   </section>
 
-  <script src="./js/index.js" defer></script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-  crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-  crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-  crossorigin="anonymous"></script>
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
