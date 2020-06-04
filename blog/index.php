@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/index.css">
   <script src="https://kit.fontawesome.com/8e747eb614.js" crossorigin="anonymous"></script>
 
   <title>Blog</title>
@@ -63,16 +63,10 @@
       <div class="border-bottom">
         <div class="lead mt-5">Recent Posts</div>
       </div>
-      <div id="blogContent0"></div>
-      <div id="blogContent1"></div>
-      <div id="blogContent2"></div>
-      <div id="blogContent3"></div>
-      <div id="blogContent4"></div>
-      <div id="blogContent5"></div>
-      <div id="blogContent6"></div>
-      <div id="blogContent7"></div>
-      <div id="blogContent8"></div>
-      <div id="blogContent9"></div>
+      <div id="blogList"></div>
+      <div class="spinner-border text-primary mt-5 mb-5" role="status" id="spinner">
+        <span class="sr-only">Loading...</span>
+      </div>
     </div>
   </section>
 

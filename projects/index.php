@@ -53,7 +53,13 @@
       </div>
     </nav>
   </section>
-  <h1>This page is currently under construction</h1>
+  
+  <section>
+    <div class="container">
+      <div id="projectCards"></div>
+    </div>
+  </section>
+
   <section>
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
@@ -87,7 +93,7 @@
       </div>
     </div>
   </section>
-
+  <script src="./js/index.js" defer></script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>

@@ -72,14 +72,54 @@ request1.open("GET", "https://api.github.com/users/danielpalmer63", true);
 request1.onload = function () {
   let data = JSON.parse(this.response);
   if (request1.status == 200) {
-//BLOG PREVIEW    
-let gitImg = document.createElement("img");
-gitImg.setAttribute("src", data.avatar_url);
-gitImg.setAttribute("class", "card-img");
-document.querySelector("#gitHubImage").appendChild(gitImg);
+    //BLOG PREVIEW    
+    let gitImg = document.createElement("img");
+    gitImg.setAttribute("src", data.avatar_url);
+    gitImg.setAttribute("class", "card-img");
+    document.querySelector("#gitHubImage").appendChild(gitImg);
   }
   else {
     console.log("An error occured" + " " + request1.status);
   }
 }
 request1.send();
+
+let request2 = new XMLHttpRequest();
+request2.open("GET", "https://api.github.com/users/danielpalmer63/repos", true);
+request2.onload = function () {
+  let data = JSON.parse(this.response);
+  if (request2.status == 200) {
+//BLOG PREVIEW    
+    for(let i = 0; i < data.length; i++) {
+      let card = document.createElement("div");
+      card.setAttribute("class", "card");
+      card.setAttribute("style", "width: 18rem;");
+      card.setAttribute("id", "card");
+      document.querySelector("#projectCards").appendChild(card);
+
+      let cardBody = document.createElement("div");
+      cardBody.setAttribute("class", "card-body");
+      cardBody.setAttribute("id", "cardBody");
+      document.querySelector("#card").appendChild(cardBody);
+
+      let cardTitle = document.createElement("h5");
+      let titleText = document.createTextNode(data[i].name);
+      cardTitle.setAttribute("class", "card-title");
+      cardTitle.appendChild(titleText);
+      document.querySelector("#cardBody").appendChild(cardTitle);
+
+      let cardContent = document.createElement("h5");
+      let contentText = document.createTextNode(data[i].description);
+      cardContent.setAttribute("class", "card-text");
+      cardContent.appendChild(contentText);
+      document.querySelector("#cardBody").appendChild(cardContent);
+
+
+    }
+  }
+  else {
+    console.log("An error occured" + " " + request2.status);
+  }
+}
+request2.send();
+

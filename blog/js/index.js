@@ -4,16 +4,21 @@ request.onload = function () {
   let data = JSON.parse(this.response);
   if (request.status == 200) {
 //BLOG PREVIEW    
-
+    document.getElementById('spinner').setAttribute("style", "display: none");
 
     for(var i = 0; i < data.length; i++) { 
         let div0 = document.createElement("div");
         let div1 = document.createElement("div");
+        let div2 = document.createElement("div");
         let h3 = document.createElement("h3");
         let p0 = document.createElement("p");
         let p1 = document.createElement("p");
         let p2 = document.createElement("p");
         let strong = document.createElement("strong");
+
+        div2.setAttribute("id","blogContent" + i);
+        document.querySelector("#blogList").appendChild(div2);
+
         div0.setAttribute("class", "mt-3 border-bottom");
         div0.setAttribute("id", "borderBox" + i);
         document.querySelector("#blogContent" + i).appendChild(div0);
