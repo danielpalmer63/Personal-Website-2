@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./css/index.css">
   <script src="https://kit.fontawesome.com/8e747eb614.js" crossorigin="anonymous"></script>
 
-  <title>About Daniel</title>
+  <title>Daniel Palmer - Home</title>
 </head>
 
 <body>
@@ -20,20 +20,19 @@
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="http://palmtreedev.com/">Home</a>
+            <a class="nav-link" href="http://palmtreedev.com/">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="http://palmtreedev.com/about/">About</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="http://palmtreedev.com/blog/">Blog</a>
           </li>
-          <li class="nav-item  active">
-            <a class="nav-link" href="http://palmtreedev.com/projects/">Projects</a>
+          <li class="nav-item">
+            <a class="nav-link" href="./projects/">Projects</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -41,7 +40,7 @@
               Social Media
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="https://www.linkedin.com/in/daniel-palmer2020/"><i
+              <a class="dropdown-item" href="https://www.linkedin.com/in/daniel-palmer2020/"><i
                   class="fab fa-linkedin" style="color: #2867B2;"></i> LinkedIn</a>
               <a class="dropdown-item" href="https://github.com/danielpalmer63"><i class="fab fa-github" style="color: #211F1F;"></i> GitHub</a>
               <a class="dropdown-item" href="https://stackoverflow.com/users/13592077/daniel-palmer"><i class="fab fa-stack-overflow"></i> Stack Overflow</a>
@@ -53,10 +52,14 @@
       </div>
     </nav>
   </section>
-  
+
   <section>
     <div class="container">
-      <div id="projectCards"></div>
+        <h1 id="title" class="mt-3"></h1>
+        <p><strong>By Daniel Palmer</strong></p>
+        <p id="date"></p>
+        <div id="image"></div>
+        <div id="content" class="mt-3 mb-3"></div>
     </div>
   </section>
 
@@ -93,6 +96,11 @@
       </div>
     </div>
   </section>
+
+  
+
+</body>
+<footer>
   <script src="./js/index.js" defer></script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -103,6 +111,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
-</body>
+</footer>
 
 </html>

@@ -109,12 +109,10 @@ request2.onload = function () {
       document.querySelector("#cardBody").appendChild(cardTitle);
 
       let cardContent = document.createElement("h5");
-      let contentText = document.createTextNode(data[i].description);
+      let contentText = document.createTextNode(data[i].description.substring(0-75));
       cardContent.setAttribute("class", "card-text");
       cardContent.appendChild(contentText);
       document.querySelector("#cardBody").appendChild(cardContent);
-
-
     }
   }
   else {

@@ -49,7 +49,18 @@ request.onload = function () {
         p1.appendChild(dateText);
         document.querySelector("#borderBox" + i).appendChild(p1);
 
-        let content = document.createTextNode(data[i].content);
+        let prev = "";
+        for(let j = 0; j < data[i].content.length; j++) {
+          if (data[i].content.charAt(j) == "." || data[i].content.charAt(j) == "!" || data[i].content.charAt(j) == "?") {        
+            prev = prev + data[i].content.charAt(j);   
+            break;          
+          }
+          else {
+            prev = prev + data[i].content.charAt(j);   
+          }
+        }
+
+        let content = document.createTextNode(prev);
         p2.appendChild(content);
         document.querySelector("#borderBox" + i).appendChild(p2);
     }

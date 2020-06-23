@@ -47,7 +47,7 @@
             </div>
           </li>
         </ul>
-        <a class="nav-link nav-item" style="color:#495057;" href="./downloads/Resume.pdf" download>Download Resume <i
+        <a class="nav-link nav-item" style="color:#495057;" href="http://palmtreedev.com/downloads/resume.pdf" download>Download Resume <i
             class="fas fa-download"></i></a>
       </div>
     </nav>
@@ -196,7 +196,7 @@
           </div>
           <div class="col-md">
             <h4 style="margin-bottom: 1rem;">Contact Me</h4>
-            <form method="post" name="contact-form" action="./contactform.php">
+            <form method="post" name="contact-form" action="http://palmtreedev.com/contactform.php">
               <div class="form-group" style="text-align: center;">
                 <input  class="form-control" name="name" type="text" aria-describedby="emailHelp" style="margin-bottom: 1rem;" placeholder="Full Name" required>
                 <input  class="form-control" name="email" type="text" aria-describedby="emailHelp" style="margin-bottom: 1rem;" placeholder="Email" required>

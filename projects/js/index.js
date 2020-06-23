@@ -21,8 +21,8 @@ request.onload = function () {
             document.querySelector("#cardRow" + rowNum).appendChild(colDiv);
 
             let card = document.createElement("div");
-            card.setAttribute("class", "card mt-4 mb-4");
-            card.setAttribute("style", "width: 18rem");
+            card.setAttribute("class", "card mt-4 mb-4 shadow");
+            card.setAttribute("style", "width: 18rem; margin-left:auto; margin-right:auto;");
             card.setAttribute("id", "card" + cardNum);
             document.querySelector("#cardCol" + colNum).appendChild(card);
 
