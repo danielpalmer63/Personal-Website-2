@@ -3,7 +3,7 @@ request.open("GET", "https://api.github.com/users/danielpalmer63/repos?sort=upda
 request.onload = function () {
     let data = JSON.parse(this.response);
     if (request.status == 200) {
-        //BLOG PREVIEW    
+           
         let rowNum = 0;
         let colNum = 0;
         let cardNum = 0;

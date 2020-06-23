@@ -3,7 +3,7 @@ request.open("GET", "https://palmtreedevapi.herokuapp.com/getAll", true);
 request.onload = function () {
   let data = JSON.parse(this.response);
   if (request.status == 200) {
-//BLOG PREVIEW    
+   
     document.getElementById('spinner').setAttribute("style", "display: none");
 
     for(var i = 0; i < data.length; i++) { 
@@ -51,12 +51,12 @@ request.onload = function () {
 
         let prev = "";
         for(let j = 0; j < data[i].content.length; j++) {
-          if (data[i].content.charAt(j) == "." || data[i].content.charAt(j) == "!" || data[i].content.charAt(j) == "?") {        
-            prev = prev + data[i].content.charAt(j);   
+          if (data[i].content.replace(/!n/g,"").charAt(j) == "." || data[i].content.replace(/!n/g,"").charAt(j) == "!" || data[i].content.replace(/!n/g,"").charAt(j) == "?") {        
+            prev = prev + data[i].content.replace(/!n/g,"").charAt(j);   
             break;          
           }
           else {
-            prev = prev + data[i].content.charAt(j);   
+            prev = prev + data[i].content.replace(/!n/g,"").charAt(j);   
           }
         }
 

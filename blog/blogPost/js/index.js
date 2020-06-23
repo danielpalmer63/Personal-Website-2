@@ -22,7 +22,28 @@ request.onload = function () {
         img.setAttribute("width","75%");
         document.querySelector("#image").appendChild(img);
 
-        document.getElementById("content").textContent = data[blogNum].content;
+        let content = data[blogNum].content;
+        let para = {};
+        let charPlace = 0;
+        let j = 0;
+        let textSize = 0;
+
+        for (let i = 0; i < content.length; i++) {
+            if (content.charAt(i) == "!" && content.charAt(i + 1) == "n") {
+                para[j] = content.substring(charPlace, i);
+                charPlace = i+3;
+                j++;
+                textSize = j;
+            }
+        }
+
+        for (let x = 0; x < textSize; x++) {
+            console.log(x);
+            let p = document.createElement("p");
+            let pText = document.createTextNode(para[x]);
+            p.appendChild(pText);
+            document.querySelector("#content").appendChild(p);
+        }
     }
     else {
         console.log("An error occured" + " " + request.status);

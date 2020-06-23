@@ -3,8 +3,8 @@ request.open("GET", "https://palmtreedevapi.herokuapp.com/getAll", true);
 request.onload = function () {
   let data = JSON.parse(this.response);
   if (request.status == 200) {
-//BLOG PREVIEW    
-    for (var i = 0; i < 3; i++) {
+    let i = data.length - 1;
+    for (var x = 0; x < 3; x++) {
       document.getElementById('spinner' + i).setAttribute("style", "display: none");
       var imgID = '#blogImage' + i;   
       let img = document.createElement("img");
@@ -15,7 +15,7 @@ request.onload = function () {
       var titleID = 'blogTitle' + i;
       var textID = 'blogText' + i;      
       document.getElementById(titleID).innerHTML = data[i].title;
-      document.getElementById(textID).innerHTML = data[i].content;
+      document.getElementById(textID).innerHTML = data[i].content.replace(/!n/g,"");
       
       var dateID = 'blogDate' + i;
       var month = Number(data[i].date.substring(0, 2)) - 1;
@@ -59,6 +59,7 @@ request.onload = function () {
       } else {
         document.getElementById(dateID).innerHTML = 'Last updated ' + Math.floor(dateAge / 31104000000) + ' years ago';
       }
+      i--;
     }
   }
   else {
@@ -72,7 +73,7 @@ request1.open("GET", "https://api.github.com/users/danielpalmer63", true);
 request1.onload = function () {
   let data = JSON.parse(this.response);
   if (request1.status == 200) {
-    //BLOG PREVIEW    
+       
     let gitImg = document.createElement("img");
     gitImg.setAttribute("src", data.avatar_url);
     gitImg.setAttribute("class", "card-img");
@@ -83,41 +84,4 @@ request1.onload = function () {
   }
 }
 request1.send();
-
-let request2 = new XMLHttpRequest();
-request2.open("GET", "https://api.github.com/users/danielpalmer63/repos", true);
-request2.onload = function () {
-  let data = JSON.parse(this.response);
-  if (request2.status == 200) {
-//BLOG PREVIEW    
-    for(let i = 0; i < data.length; i++) {
-      let card = document.createElement("div");
-      card.setAttribute("class", "card");
-      card.setAttribute("style", "width: 18rem;");
-      card.setAttribute("id", "card");
-      document.querySelector("#projectCards").appendChild(card);
-
-      let cardBody = document.createElement("div");
-      cardBody.setAttribute("class", "card-body");
-      cardBody.setAttribute("id", "cardBody");
-      document.querySelector("#card").appendChild(cardBody);
-
-      let cardTitle = document.createElement("h5");
-      let titleText = document.createTextNode(data[i].name);
-      cardTitle.setAttribute("class", "card-title");
-      cardTitle.appendChild(titleText);
-      document.querySelector("#cardBody").appendChild(cardTitle);
-
-      let cardContent = document.createElement("h5");
-      let contentText = document.createTextNode(data[i].description.substring(0-75));
-      cardContent.setAttribute("class", "card-text");
-      cardContent.appendChild(contentText);
-      document.querySelector("#cardBody").appendChild(cardContent);
-    }
-  }
-  else {
-    console.log("An error occured" + " " + request2.status);
-  }
-}
-request2.send();
 

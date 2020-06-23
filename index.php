@@ -73,9 +73,9 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="https://i.imgur.com/V0BcuqH.jpg" class="d-block w-100" alt="...">
+          <img src="https://i.imgur.com/hEwawTq.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Delicious Korean Barbeque</h5>
+            <h5>My Own Class of 2020</h5>
           </div>
         </div>
         <div class="carousel-item">
