@@ -118,7 +118,7 @@
               <h5 class="card-title" id="blogTitle0"></h5>
               <p class="card-text"><small class="text-muted" id="blogDate0"></small></p>
               <p class="card-text" id="blogText0"></p>
-              <a href="./blog" class="btn btn-outline-primary">Read More</a>
+              <div id="blogLink0"></div>
             </div>
           </div>
         </div>
@@ -134,7 +134,7 @@
               <h5 class="card-title" id="blogTitle1"></h5>
               <p class="card-text"><small class="text-muted" id="blogDate1"></small></p>
               <p class="card-text" id="blogText1"></p>
-              <a href="./blog" class="btn btn-outline-primary">Read More</a>
+              <div id="blogLink1"></div>
             </div>
           </div>
         </div>
@@ -150,7 +150,7 @@
               <h5 class="card-title" id="blogTitle2"></h5>
               <p class="card-text"><small class="text-muted" id="blogDate2"></small></p>
               <p class="card-text" id="blogText2"></p>
-              <a href="./blog" class="btn btn-outline-primary">Read More</a>
+              <div id="blogLink2"></div>
             </div>
           </div>
         </div>
@@ -191,8 +191,8 @@
           </div>
           <div class="col-md">
             <h4 style="margin-bottom: 1rem;">Recent News</h4>
-            <p>As of May 9th, 2020, I am an official graduate of Penn State University! While I will no longer be required to attend anymore lectures, I will continue working and educating myself throughout my entire life.</p>
-            <p>Hopefully, this website can continue to act as a platform to display my skills, projects, and hobbies. We Are!</p>
+            <p>Well, it looks like I'm officially a blogger. My blog page is up and running! I may not be a great writer, but hopefully you'll enjoy this tiny insight you have into my life!</p>
+            <p>Thank's for being so patient, and you can look forward to more interesting features to come!</p>
           </div>
           <div class="col-md">
             <h4 style="margin-bottom: 1rem;">Contact Me</h4>

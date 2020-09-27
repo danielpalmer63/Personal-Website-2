@@ -6,18 +6,22 @@ request.onload = function () {
    
     document.getElementById('spinner').setAttribute("style", "display: none");
 
-    for(var i = 0; i < data.length; i++) { 
+    for(var i = data.length-1; i >= 0; i--) { 
         let div0 = document.createElement("div");
         let div1 = document.createElement("div");
-        let div2 = document.createElement("div");
+        let a0 = document.createElement("a");
         let h3 = document.createElement("h3");
         let p0 = document.createElement("p");
         let p1 = document.createElement("p");
         let p2 = document.createElement("p");
         let strong = document.createElement("strong");
+        let blogURL = "http://palmtreedev.com/blog/blogPost/index.php?blogNum=" + i;
 
-        div2.setAttribute("id","blogContent" + i);
-        document.querySelector("#blogList").appendChild(div2);
+        a0.setAttribute("id","blogContent" + i);
+        a0.setAttribute("class","disableLinkStyle");
+        a0.setAttribute("href",blogURL);
+
+        document.querySelector("#blogList").appendChild(a0);
 
         div0.setAttribute("class", "mt-3 border-bottom");
         div0.setAttribute("id", "borderBox" + i);

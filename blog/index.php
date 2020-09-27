@@ -54,16 +54,12 @@
     </nav>
   </section>
 
-  <div class="alert alert-primary" role="alert" style="text-align: center;">
-    This page is currently under construction. Only blog previews are available at the moment. Thank you!
-  </div>
-
   <section>
     <div class="container">
       <div class="border-bottom">
         <div class="lead mt-5">Recent Posts</div>
       </div>
-      <div id="blogList"></div>
+      <div><a id="blogList"></a></div>
       <div class="spinner-border text-primary mt-5 mb-5" role="status" id="spinner">
         <span class="sr-only">Loading...</span>
       </div>
@@ -84,8 +80,8 @@
           </div>
           <div class="col-md">
             <h4 style="margin-bottom: 1rem;">Recent News</h4>
-            <p>As of May 9th, 2020, I am an official graduate of Penn State University! While I will no longer be required to attend anymore lectures, I will continue working and educating myself throughout my entire life.</p>
-            <p>Hopefully, this website can continue to act as a platform to display my skills, projects, and hobbies. We Are!</p>
+            <p>Well, it looks like I'm officially a blogger. My blog page is up and running! I may not be a great writer, but hopefully you'll enjoy this tiny insight you have into my life!</p>
+            <p>Thank's for being so patient, and you can look forward to more interesting features to come!</p>
           </div>
           <div class="col-md">
             <h4 style="margin-bottom: 1rem;">Contact Me</h4>

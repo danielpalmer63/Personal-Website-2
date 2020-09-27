@@ -5,19 +5,28 @@ request.onload = function () {
   if (request.status == 200) {
     let i = data.length - 1;
     for (var x = 0; x < 3; x++) {
-      document.getElementById('spinner' + i).setAttribute("style", "display: none");
-      var imgID = '#blogImage' + i;   
+      document.getElementById('spinner' + x).setAttribute("style", "display: none");
+      var imgID = '#blogImage' + x;   
       let img = document.createElement("img");
       img.setAttribute("src", data[i].image);
       img.setAttribute("class", "card-img-top");
       document.querySelector(imgID).appendChild(img);
 
-      var titleID = 'blogTitle' + i;
-      var textID = 'blogText' + i;      
+      var titleID = 'blogTitle' + x;
+      var textID = 'blogText' + x;      
       document.getElementById(titleID).innerHTML = data[i].title;
-      document.getElementById(textID).innerHTML = data[i].content.replace(/!n/g,"");
+      document.getElementById(textID).innerHTML = data[i].content.replace(/!n/g,"").substring(0, 71) + "...";
       
-      var dateID = 'blogDate' + i;
+      var blogLink = '#blogLink' + x;
+      var blogURL = 'http://palmtreedev.com/blog/blogPost/index.php?blogNum=' + i;
+      let btnText = document.createTextNode("Read More");
+      let btn = document.createElement("a");
+      btn.setAttribute("class", "btn btn-primary text-light");
+      btn.setAttribute("href", blogURL);
+      btn.appendChild(btnText);
+      document.querySelector(blogLink).appendChild(btn);
+      
+      var dateID = 'blogDate' + x;
       var month = Number(data[i].date.substring(0, 2)) - 1;
       var day = Number(data[i].date.substring(2, 4));
       var year = Number(data[i].date.substring(4, 8));
