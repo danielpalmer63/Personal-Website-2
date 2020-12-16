@@ -1,5 +1,5 @@
 let request = new XMLHttpRequest();
-request.open("GET", "https://palmtreedevapi.herokuapp.com/getAll", true);
+request.open("GET", "./cards.json", true);
 request.onload = function () {
   let data = JSON.parse(this.response);
   if (request.status == 200) {
@@ -18,7 +18,7 @@ request.onload = function () {
       document.getElementById(textID).innerHTML = data[i].content.replace(/!n/g,"").substring(0, 71) + "...";
       
       var blogLink = '#blogLink' + x;
-      var blogURL = 'http://palmtreedev.com/blog/blogPost/index.php?blogNum=' + i;
+      var blogURL = '/blog/blogPost/index.php?blogNum=' + i;
       let btnText = document.createTextNode("Read More");
       let btn = document.createElement("a");
       btn.setAttribute("class", "btn btn-primary text-light");
@@ -27,11 +27,11 @@ request.onload = function () {
       document.querySelector(blogLink).appendChild(btn);
       
       var dateID = 'blogDate' + x;
-      var month = Number(data[i].date.substring(0, 2)) - 1;
-      var day = Number(data[i].date.substring(2, 4));
-      var year = Number(data[i].date.substring(4, 8));
-      var hour = Number(data[i].date.substring(8, 10));
-      var min = Number(data[i].date.substring(10));
+      var year = Number(data[i].date.substring(0, 4));
+      var month = Number(data[i].date.substring(5, 7)) - 1;
+      var day = Number(data[i].date.substring(8, 10));    
+      var hour = Number(data[i].date.substring(11, 13));
+      var min = Number(data[i].date.substring(14, 16));
 
       var date = new Date(year, month, day, hour, min);
       var currentDate = new Date();

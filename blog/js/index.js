@@ -1,5 +1,5 @@
 let request = new XMLHttpRequest();
-request.open("GET", "https://palmtreedevapi.herokuapp.com/getAll", true);
+request.open("GET", "./blogPost/allblogs.json", true);
 request.onload = function () {
   let data = JSON.parse(this.response);
   if (request.status == 200) {
@@ -15,7 +15,7 @@ request.onload = function () {
         let p1 = document.createElement("p");
         let p2 = document.createElement("p");
         let strong = document.createElement("strong");
-        let blogURL = "http://palmtreedev.com/blog/blogPost/index.php?blogNum=" + i;
+        let blogURL = "./blogPost/index.php?blogNum=" + i;
 
         a0.setAttribute("id","blogContent" + i);
         a0.setAttribute("class","disableLinkStyle");
@@ -42,9 +42,9 @@ request.onload = function () {
         div1.setAttribute("id", "date" + i);
         document.querySelector("#borderBox" + i).appendChild(div1);
 
-        let month = Number(data[i].date.substring(0, 2)) - 1;
-        let day = Number(data[i].date.substring(2, 4));
-        let year = Number(data[i].date.substring(4, 8));
+        var year = Number(data[i].date.substring(0, 4));
+        var month = Number(data[i].date.substring(5, 7)) - 1;
+        var day = Number(data[i].date.substring(8, 10)); 
   
         let date = new Date(year, month, day);
         let monthName = date.toLocaleDateString('default',{month: 'long'});

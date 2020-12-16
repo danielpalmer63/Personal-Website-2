@@ -24,16 +24,16 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="http://palmtreedev.com/">Home</a>
+            <a class="nav-link" href="https://palmtreedev.com/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="http://palmtreedev.com/about/">About</a>
+            <a class="nav-link" href="/about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="http://palmtreedev.com/blog/">Blog</a>
+            <a class="nav-link" href="/blog">Blog</a>
           </li>
-          <li class="nav-item  active">
-            <a class="nav-link" href="http://palmtreedev.com/projects/">Projects</a>
+          <li class="nav-item active">
+            <a class="nav-link" href="/projects">Projects</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -48,7 +48,7 @@
             </div>
           </li>
         </ul>
-        <a class="nav-link nav-item" style="color:#495057;" href="http://palmtreedev.com/downloads/resume.pdf" download>Download Resume <i
+        <a class="nav-link nav-item" style="color:#495057;" href="https://palmtreedev.com/downloads/resume.pdf" download>Download Resume <i
             class="fas fa-download"></i></a>
       </div>
     </nav>
@@ -67,7 +67,7 @@
           <div class="col-md">
             <img class="img-thumbnail" src="https://i.imgur.com/Vjk0RHx.png" style="margin-bottom: 1rem;">
             <h5 style="margin-bottom: 1rem;">Daniel Palmer</h5>
-            <p><a href="http://palmtreedev.com/about/">About</a><br><a href="http://palmtreedev.com/blog/">Blog</a><br><a href="http://palmtreedev.com/projects/">Projects</a></p>
+            <p><a href="/about/">About</a><br><a href="/blog/">Blog</a><br><a href="/projects/">Projects</a></p>
             <a href="https://www.linkedin.com/in/daniel-palmer2020/"><i class="fab fa-linkedin" style="color: #2867B2;"></i></a>
             <a href="https://github.com/danielpalmer63"><i class="fab fa-github-square" style="color: #211F1F;"></i></a>
             <a href="https://stackoverflow.com/users/13592077/daniel-palmer"><i class="fab fa-stack-overflow" style="color: #211F1F;"></i></a>
@@ -79,7 +79,7 @@
           </div>
           <div class="col-md">
             <h4 style="margin-bottom: 1rem;">Contact Me</h4>
-            <form method="post" name="contact-form" action="http://palmtreedev.com/contactform.php">
+            <form method="post" name="contact-form" action="https://palmtreedev.com/contactform.php">
               <div class="form-group" style="text-align: center;">
                 <input  class="form-control" name="name" type="text" aria-describedby="emailHelp" style="margin-bottom: 1rem;" placeholder="Full Name" required>
                 <input  class="form-control" name="email" type="text" aria-describedby="emailHelp" style="margin-bottom: 1rem;" placeholder="Email" required>

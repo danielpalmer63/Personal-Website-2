@@ -3,15 +3,15 @@ const urlParams = new URLSearchParams(queryString);
 const blogNum = urlParams.get('blogNum');
 
 let request = new XMLHttpRequest();
-request.open("GET", "https://palmtreedevapi.herokuapp.com/getAll", true);
+request.open("GET", "./allblogs.json", true);
 request.onload = function () {
     let data = JSON.parse(this.response);
     if (request.status == 200) {
         document.getElementById("title").textContent = data[blogNum].title;
 
-        let month = Number(data[blogNum].date.substring(0, 2)) - 1;
-        let day = Number(data[blogNum].date.substring(2, 4));
-        let year = Number(data[blogNum].date.substring(4, 8));
+        var year = Number(data[blogNum].date.substring(0, 4));
+        var month = Number(data[blogNum].date.substring(5, 7)) - 1;
+        var day = Number(data[blogNum].date.substring(8, 10));   
         let date = new Date(year, month, day);
         let monthName = date.toLocaleDateString('default',{month: 'long'});
 
